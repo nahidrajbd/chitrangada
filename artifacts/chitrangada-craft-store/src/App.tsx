@@ -6,6 +6,7 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import { ArrowDownRight, ArrowUpRight, Check, ChevronRight, Clock3, ExternalLink, Heart, Instagram, MapPin, Menu, MessageCircle, Phone, Quote, Sparkles, Star, X } from 'lucide-react';
 import { Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
 import NotFound from '@/pages/not-found';
+import heroImage from '@/assets/chitrangada-hero.jpg';
 
 const queryClient = new QueryClient();
 
@@ -98,7 +99,7 @@ function Hero() {
       </div>
       <div className="hero-art">
         <div className="hero-image">
-          <img src="/chitrangada-hero.jpg" alt="Handmade terracotta and brass craft pieces" data-testid="img-hero-crafts" />
+          <img src={heroImage} alt="Handmade terracotta and brass craft pieces" data-testid="img-hero-crafts" />
           <div className="image-caption"><span>01 / 03</span><span>things made slowly</span></div>
         </div>
         <div className="stamp">HAND<br />PICKED<br /><span>in BD</span></div>
